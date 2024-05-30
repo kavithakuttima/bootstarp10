@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            margin-left: 150px;
+        }
+        table{
+            width:800px;
+            height:400px;
+           margin-left: 170px;
+           margin-top: -100px;
+           
+        }
+        th,td{
+            padding:10px;
+            
+        }
+        
+        h1{
+            margin-left: 150px;
+        }
+        span{
+            margin-left: 300px;
+        }
+        
+    </style>
+</head>
+<body>
+    <script >
+        function add()
+        {
+            var a=parseInt(document.getElementById('input1').value);
+            var b=parseInt(document.getElementById('input2').value);
+            var c=parseInt(document.getElementById('input3').value);
+            var d=parseInt(document.getElementById('input4').value);
+            var e=parseInt(document.getElementById('input5').value);
+            var z=a+b+c+d+e;
+           alert("The result is=:"+z)
+        }
+        function percentage()
+        {
+            var a=parseInt(document.getElementById('input1').value);
+            var b=parseInt(document.getElementById('input2').value);
+            var c=parseInt(document.getElementById('input3').value);
+            var d=parseInt(document.getElementById('input4').value);
+            var e=parseInt(document.getElementById('input5').value);
+            var f=a+b+c+d+e;
+            var z=f/500*100;
+           alert("The result is=:"+z)
+        }
+    
+    
+    
+    </script><br><br>
+        <table border="6">
+            <form >
+                <th class="text-center" colspan="2"><h2>STUDENT DETAILS</h2></th>
+               <tr><td><label>STUDENT ID</label></td>
+                <td><input type="number" id="" name="student id" value="" required></tr></td>
+                <tr><td><label>STUDENT NAME</label></td>
+                <td><input type="text" id="" name="student" value="" required></tr></td>
+                <tr><td><label>ADDRESS</label></td>
+                    <td> <textarea rows="3" cols="30" placeholder="Address" required></textarea></td></tr><br>
+                    <th class="text-center" colspan="2"><h2>STUDENT MARK</h2></th>
+        <tr><td><label>TAMIL</label></td>
+            <td><input type="text" id="input1" name="num1" value="" placeholder="Tamil Mark Type" ></td></tr><br>
+     <tr><td><label>ENGLISH</label>&nbsp;</td>
+        <td> <input type="text" id="input2" name="num2" value=""  placeholder="English Mark Type"></td></tr><br>
+     <tr> <td><label>MATHEMATICS</label>&nbsp;</td>
+        <td><input type="text" id="input3" name="num3" value="" placeholder="Maths Mark Type" ></td></tr><br>
+     <tr><td><label>SCIENCE</label></td>
+        <td><input type="text" id="input4" name="num4" value=""  placeholder="Science Mark Type"></td></tr><br>
+     <tr><td><label>SOCIAL SCIENCE</label></td>
+        <td><input type="text" id="input5" name="num5" value=""  placeholder="Social Science Mark Type"></td></tr>
+        <tr>
+            <th class="text-center" colspan="2" >
+           <button class="btn btn-success" type="button" onclick="add()">addition</button>
+            <button class="btn btn-primary" type="button" onclick="percentage()">percentage</button></th></tr>
+    </form>
+</table>
+</body>
+</html>
